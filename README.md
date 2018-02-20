@@ -1,24 +1,18 @@
-# README
+# A Ruby on Rails App to submit overtime by employee for manager's approval
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Key Requirements: An Organization needs to document if a salaried employee did not did not get overtime each week
 
-Things you may want to cover:
+## Models
+- Post -> date:date rationale:text
+- User -> Devise
+- AdminUser -> STI
 
-* Ruby version
+## Features
+  - Approval Workflow
+  - SMS Sending -> Link to approval or overtime input
+  - Admin dashboard using Administrate gem
+  - Email sumary to managers for approval
+  - Needs to be documented if employee did not log overtime
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  ## UI:
+  - Bootstrap -> Formatting
