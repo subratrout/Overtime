@@ -35,11 +35,14 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+group :test do 
+  gem 'database_cleaner'
+end
 
 group :development do
   # For testing
   gem 'byebug', platform: :mri
+  gem 'pry'
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
   gem 'database_cleaner'
