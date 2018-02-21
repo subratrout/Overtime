@@ -4,5 +4,6 @@
   <%= f.date_field :date %>
   <%= f.label :rationale %>
   <%= f.text_area :rationale %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
   <%= f.submit 'Save' %>
 <% end %>
