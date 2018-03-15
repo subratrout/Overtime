@@ -24,6 +24,11 @@ gem 'coffee-rails', '~> 4.2'
 # For Growl notification
 gem "gritter", "1.2.0"
 
+
+# For Admin Dashboard
+gem 'administrate'
+gem 'bourbon'
+
 gem 'devise', '~> 4.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
