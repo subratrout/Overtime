@@ -1,21 +1,3 @@
 <h1>Create a New Post </h1>
 
-<%= form_for @post, class: "form-horizontal" do |f| %>
-  <% if @post.errors.any? %>  
-    <%= @post.errors.full_messages.each do |error| %>
-      <%= js add_gritter(error, title: "Overtime App Notification",sticky: false) %>
-    <% end %>
-  <% end %>
-  <div class="form-group">
-    <%= f.label :date, class: "col-sm-2 control-label" %> 
-    <%= f.date_field :date, class: "form-control" %>  
-  </div>
-
-  <div class="form-group">
-    <%= f.label :rationale, class: "col-sm-2 control-label" %>  
-    <%= f.text_area :rationale, class: "form-control" %>  
-  </div>
-    <%= f.hidden_field :user_id, value: current_user.id %>
-  <%= f.submit 'Save', class: 'btn btn-primary btn-block' %>
-
-<% end %>
+<%= render 'form' %>
