@@ -27,6 +27,8 @@ gem "gritter", "1.2.0"
 #For managing authorization rules
 gem 'pundit'
 
+gem 'twilio-ruby'
+
 # For Admin Dashboard
 gem 'administrate'
 gem 'bourbon'
@@ -49,6 +51,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 group :development, :test do
   # For testing
+  gem 'dotenv-rails'
   gem 'byebug', platform: :mri
   gem 'factory_girl_rails', '~> 4.7'
   gem 'pry'
