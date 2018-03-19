@@ -17,5 +17,10 @@ RSpec.describe Post, type: :model do
 
       expect(@post).to_not be_valid
     end
+
+    it 'has an overtime_request greater than 0.0' do
+      @post.overtime_request = 0.0
+      expect(@post).to_not be_valid
+    end
   end
 end

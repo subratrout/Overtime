@@ -55,8 +55,7 @@ describe 'navigate' do
       fill_in 'post[rationale]', with: "Something Rational"
       fill_in 'post[overtime_request]', with: 4.5
 
-      click_on "Save"
-      expect(page).to have_content("Something Rational")
+      expect{ click_on "Save"}.to change(Post, :count).by(1)
     end
 
     it 'will have a user associated with post' do
