@@ -18,7 +18,7 @@ FactoryGirl.define do
     email {generate :email}
     password "asdfasdf"
     password_confirmation "asdfasdf"
-    phone "235445534"
+    phone "2354455345"
   end
 
   factory :non_authorized_user, class: "User" do
