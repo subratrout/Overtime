@@ -22,6 +22,7 @@ class UserDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime.with_options(searchable: false),
     updated_at: Field::DateTime.with_options(searchable: false),
     type: Field::String.with_options(searchable: false),
+    phone: Field::String.with_options(searchable: false)
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -31,7 +32,6 @@ class UserDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :posts,
-    :id,
     :email,
     :type,
   ].freeze
@@ -41,6 +41,7 @@ class UserDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :posts,
     :email,
+    :phone,
     :remember_created_at,
     :sign_in_count,
     :current_sign_in_at,
@@ -64,6 +65,7 @@ class UserDashboard < Administrate::BaseDashboard
     :first_name,
     :last_name,
     :type,
+    :phone
   ].freeze
 
   # Overwrite this method to customize how users are displayed
