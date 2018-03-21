@@ -29,6 +29,7 @@ gem 'pundit'
 
 gem 'twilio-ruby'
 
+gem 'kaminari'
 # For Admin Dashboard
 gem 'administrate'
 gem 'bourbon'
