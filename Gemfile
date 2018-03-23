@@ -34,6 +34,8 @@ gem 'kaminari'
 gem 'administrate'
 gem 'bourbon'
 
+gem 'rails_12factor'
+
 gem 'devise', '~> 4.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
