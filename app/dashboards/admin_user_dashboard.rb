@@ -42,7 +42,7 @@ class AdminUserDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :posts,
     :email,
-    :phone
+    :phone,
     :encrypted_password,
     :reset_password_token,
     :reset_password_sent_at,
